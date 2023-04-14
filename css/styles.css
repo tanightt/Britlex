@@ -1,3 +1,109 @@
+:root {
+    --primary-title-color: #000000;
+    --logo-color: #939393;
+    --title-color: #263238;
+    --primary-text-color: #8F95A5;
+    --price-color: #546269;
+    --number-color: #2A3246;
+    --button-color: #ffffff; 
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--title-color);
+}
+
 h1,h2,h3,h4,h5,h6,p {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 1338px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.button {
+    font: inherit;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: var(--title-color);
+    color: var(--button-color);
+    border: 1px solid #000000;
+}
+
+/************************************ LOGO *************/
+
+.logo {
+    font-size: 36px;
+    color: var(--logo-color);
+    margin-right: 236px;
+}
+
+.primary-part {
+    color: var(--primary-title-color);
+}
+
+/*********************************** HEADER ************/
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-list {
+    font-weight: 500;
+    display: flex;
+    gap: 50px;
+}
+
+.header-button {
+    margin-left: auto;
+    min-width: 312px;
+    padding: 18px 54px;
+    color: var(--primary-title-color);
+    background-color: var(--button-color);
+}
+
+/*********************************** HERO************/
+
+.hero-title {
+    color: var(--primary-title-color);
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 1.25;
+}
+
+.hero-text {
+    font-size: 24px;
+    color: var(--primary-text-color);
+}
+
+.hero-button {
+    min-width: 426px;
+    padding: 23px 106px;
+    font-size: 36px;
 }
