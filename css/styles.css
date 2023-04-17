@@ -41,6 +41,13 @@ a {
     padding-right: 20px;
 }
 
+.section-title {
+    margin-bottom: 60px;
+    font-weight: 600;
+    font-size: 48px;
+    color: var(--primary-title-color);
+}
+
 .button {
     font: inherit;
     cursor: pointer;
@@ -53,9 +60,9 @@ a {
 /************************************ LOGO *************/
 
 .logo {
+    margin-right: 236px;
     font-size: 36px;
     color: var(--logo-color);
-    margin-right: 236px;
 }
 
 .primary-part {
@@ -90,16 +97,65 @@ a {
 
 /*********************************** HERO************/
 
+.hero {
+    padding-top: 101px;
+    padding-bottom: 134px;
+}
+
+.hero-container {
+    display: flex;
+}
+
+.hero-block {
+    position: relative;
+    width: 540px;
+    margin-right: 144px;
+}
+
 .hero-title {
+    margin-bottom: 40px;
     color: var(--primary-title-color);
     font-weight: 600;
     font-size: 64px;
     line-height: 1.25;
 }
 
+.icon-box {
+    position: absolute;
+    top: 93px;
+    right: 0;
+    width: 85px;
+    height: 85px;
+    border: 1px solid #000000;
+    transform: rotate(38deg);
+}
+
+.hero-icon {
+    transform: rotate(-38deg);
+
+transition: transform 250ms linear;
+}
+
+.hero-icon:hover,
+.hero-icon:focus {
+    fill: #bf6517;
+    transform: rotate(-76deg);
+}
+
 .hero-text {
+    margin-bottom: 60px;
     font-size: 24px;
     color: var(--primary-text-color);
+    text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px,
+            rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px,
+            rgb(0, 0, 0) -0.832294px 1.81859px 0px,
+            rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97998px 0.28224px 0px,
+            rgb(0, 0, 0) -1.87291px -0.701566px 0px,
+            rgb(0, 0, 0) -1.30729px -1.5136px 0px,
+            rgb(0, 0, 0) -0.421592px -1.95506px 0px,
+            rgb(0, 0, 0) 0.567324px -1.91785px 0px,
+            rgb(0, 0, 0) 1.41734px -1.41108px 0px,
+            rgb(0, 0, 0) 1.92034px -0.558831px 0px;
 }
 
 .hero-button {
@@ -107,3 +163,6 @@ a {
     padding: 23px 106px;
     font-size: 36px;
 }
+
+/*********************************** SKILLS ***********/
+
