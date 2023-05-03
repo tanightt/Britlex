@@ -34,11 +34,27 @@ a {
 }
 
 .container {
-    width: 1338px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 290px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding-left: 24px;
+        padding-right: 24px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+    .container {
+        width: 1338px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 .section-title {
