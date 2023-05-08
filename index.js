@@ -271,3 +271,21 @@ console.log("For my love i am send you my heart right now");
 
 // includes([1, 2, 3, 4, 5], 17); //false
 // includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter"); //true
+
+
+
+
+// function countProps(object) {
+//   let propCount = 0;
+//   const keys = Object.keys(object);
+//   for (const key of keys) {
+//     if (object.hasOwnProperty(key)) {
+//       propCount += 1;
+//     }
+//     }
+//     console.log(propCount);
+//   return propCount;
+// }
+
+// countProps({ name: "Mango", age: 2 }); //2
+// countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }); //3
