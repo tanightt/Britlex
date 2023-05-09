@@ -289,3 +289,43 @@ console.log("For my love i am send you my heart right now");
 
 // countProps({ name: "Mango", age: 2 }); //2
 // countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }); //3
+
+
+
+
+// const colors = [
+//   { hex: "#f44336", rgb: "244,67,54" },
+//   { hex: "#2196f3", rgb: "33,150,243" },
+//   { hex: "#4caf50", rgb: "76,175,80" },
+//   { hex: "#ffeb3b", rgb: "255,235,59" },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+// // Change code below this line
+
+// for (let color of colors) {
+//     hexColors.push(color.hex);
+//     rgbColors.push(color.rgb);
+// }
+
+// console.log(hexColors);
+// console.log(rgbColors);
+
+
+
+function makeTask(data) {
+  const completed = false;
+  const category = "General";
+  const priority = "Normal";
+  // Change code below this line
+const {text = "", categoryData = category, priorityData = priority} = data;
+  return {text,
+    category,
+    priority,
+    completed: false};
+  // Change code above this line
+}
+
+makeTask({}); //{ category: "General", priority: "Normal", completed: false }
+makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }); //{ category: "Homemade", priority: "Low", text: "Take out the trash", completed: false }
