@@ -95,7 +95,7 @@
 
 
 
-console.log("For my love i am send you my heart right now");
+// console.log("For my love i am send you my heart right now");
 
 // function calculateTotal(number) {
 //  // Change code below this line
@@ -319,13 +319,18 @@ function makeTask(data) {
   const category = "General";
   const priority = "Normal";
   // Change code below this line
-const {text = "", categoryData = category, priorityData = priority} = data;
-  return {text,
-    category,
-    priority,
-    completed: false};
+  const { text = "", category: categoryData = category, priority: priorityData = priority} = data;
+  const task = {
+  text,
+  categoryData,
+  priorityData,
+  completed
+};
+
+return task;
   // Change code above this line
 }
 
-makeTask({}); //{ category: "General", priority: "Normal", completed: false }
-makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }); //{ category: "Homemade", priority: "Low", text: "Take out the trash", completed: false }
+console.log(makeTask({})); //{ category: "General", priority: "Normal", completed: false }
+console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" })); //{ category: "Homemade", priority: "Low", text: "Take out the trash", completed: false }
+console.log(makeTask({ category: "Finance", text: "Take interest" })); //{ category: "Finance", priority: "Normal", text: "Take interest", completed: false }
