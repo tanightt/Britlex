@@ -314,23 +314,16 @@
 
 
 
-function makeTask(data) {
-  const completed = false;
-  const category = "General";
-  const priority = "Normal";
-  // Change code below this line
-  const { text = "", category: categoryData = category, priority: priorityData = priority} = data;
-  const task = {
-  text,
-  categoryData,
-  priorityData,
-  completed
-};
+// function makeTask(data) {
+//   const completed = false;
+//   const category = "General";
+//   const priority = "Normal";
+//   // Change code below this line
+//   return {category, priority, ...data, completed};
+ 
+//   // Change code above this line
+// }
 
-return task;
-  // Change code above this line
-}
-
-console.log(makeTask({})); //{ category: "General", priority: "Normal", completed: false }
-console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" })); //{ category: "Homemade", priority: "Low", text: "Take out the trash", completed: false }
-console.log(makeTask({ category: "Finance", text: "Take interest" })); //{ category: "Finance", priority: "Normal", text: "Take interest", completed: false }
+// console.log(makeTask({})); //{ category: "General", priority: "Normal", completed: false }
+// console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" })); //{ category: "Homemade", priority: "Low", text: "Take out the trash", completed: false }
+// console.log(makeTask({ category: "Finance", text: "Take interest" })); //{ category: "Finance", priority: "Normal", text: "Take interest", completed: false }
