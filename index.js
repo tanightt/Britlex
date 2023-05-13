@@ -400,3 +400,52 @@
 
 
 
+// const pizzaPalace = {
+//     pizzas: ["Ultracheese", "Smoked", "Four meats"],
+//   order(pizzaName, onSuccess, onError) {
+//         if (!this.pizzas.includes(pizzaName)) {
+//        return onError(pizzaName);
+//     }
+//     return onSuccess(pizzaName);
+//     }
+//   }
+// // Change code above this line
+
+// // Callback for onSuccess
+// function makePizza(pizzaName) {
+//   return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+// }
+
+// // Callback for onError
+// function onOrderError(error) {
+//   return `Error! There is no pizza with a name ${error} in the assortment.`;
+// }
+
+// // Method calls with callbacks
+// console.log(pizzaPalace.order("Smoked", makePizza, onOrderError));
+// console.log(pizzaPalace.order("Four meats", makePizza, onOrderError));
+// console.log(pizzaPalace.order("Big Mike", makePizza, onOrderError));
+// console.log(pizzaPalace.order("Vienna", makePizza, onOrderError));
+
+
+
+
+// function changeEven(numbers, value) {
+//   // Change code below this line
+//   const newEven = [];
+//   numbers.forEach(number => {
+//     if (number % 2 === 0) {
+//       newEven.push(number + value);
+//     } else {
+//         newEven.push(number);
+//     }
+//   })
+//     return newEven;
+//   // Change code above this line
+// }
+
+// console.log(changeEven([2, 8, 3, 7, 4, 6], 10)); //[12, 18, 3, 7, 14, 16]
+
+
+
+
